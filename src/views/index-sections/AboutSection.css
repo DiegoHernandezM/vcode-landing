@@ -1,0 +1,41 @@
+.about-section {
+    width: 100%;
+    background-color: white;
+    padding: 40px 0;
+  }
+  
+  .carousel-slide {
+    position: relative;
+  }
+  
+  .carousel-image {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.7; /* Imagen más opaca */
+  }
+  
+  .carousel-caption-custom {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Mejora la legibilidad */
+  }
+  
+  .carousel-caption-custom h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption-custom p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  

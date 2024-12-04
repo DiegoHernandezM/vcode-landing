@@ -1,0 +1,58 @@
+.technologies-banner {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;    /* Centrar verticalmente */
+    width: '100%';
+    height: 10vh; /* Ocupa toda la altura de la pantalla */
+    background-color: #f9f9f9; /* Fondo claro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    backdrop-filter: blur(5px); /* Blur tenue */
+    overflow: hidden;
+  }
+  
+  .technologies-track {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los logos se ajusten si no caben en una sola fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 40px; /* Espacio entre logos */
+  }
+  
+  .technology-image {
+    height: 100px; /* Tamaño de los logos */
+    width: auto; /* Mantiene la proporción de las imágenes */
+    transition: transform 0.3s; /* Efecto suave al pasar el mouse */
+  }
+  
+  .technology-image:hover {
+    transform: scale(1.5); /* Efecto de ampliación al pasar el mouse */
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .technologies-banner {
+      height: 15vh; /* Aumenta la altura en dispositivos móviles */
+    }
+  
+    .technologies-track {
+      gap: 20px; /* Reduce el espacio entre logos */
+    }
+  
+    .technology-image {
+      height: 70px; /* Reduce el tamaño de los logos */
+    }
+  }
+  
+  /* Ajustes para pantallas muy pequeñas (teléfonos pequeños) */
+  @media (max-width: 480px) {
+    .technologies-banner {
+      height: 20vh; /* Aumenta un poco más la altura */
+    }
+  
+    .technologies-track {
+      gap: 15px; /* Reduce aún más el espacio entre logos */
+    }
+  
+    .technology-image {
+      height: 50px; /* Ajusta el tamaño de los logos */
+    }
+  }
