@@ -28,7 +28,7 @@ function IndexHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/header.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/header.png") + ")"
           }}
           ref={pageHeader}
         ></div>
@@ -39,7 +39,6 @@ function IndexHeader() {
               className="n-logo"
               src={require("assets/img/vcode-logo.png")}
             ></img>
-            <h1 className="h1-seo">Codificando tus ideas</h1>
           </div>
          
         </Container>

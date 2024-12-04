@@ -1,0 +1,110 @@
+/* Contenedor principal */
+.contact-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh;
+    flex-wrap: wrap; /* Ajusta el diseño en pantallas pequeñas */
+  }
+  
+  /* Sección del logotipo */
+  .contact-logo-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-logo {
+    max-width: "80%"; /* Tamaño máximo del logotipo */
+    width: 100%; /* Se ajusta al tamaño disponible */
+    height: auto;
+  }
+  
+  /* Sección del formulario */
+  .contact-form-section {
+    flex: 1.5;
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form-section p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-success {
+    margin-top: 10px;
+    color: #28a745;
+  }
+  
+  .form-error {
+    margin-top: 10px;
+    color: #dc3545;
+  }
+  
+  /* Responsivo para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column; /* Logo arriba, formulario abajo */
+      gap: 30px;
+    }
+  
+    .contact-logo {
+      max-width: 200px; /* Tamaño reducido para pantallas pequeñas */
+    }
+  
+    .contact-form-section {
+      max-width: 90%; /* Ocupa más espacio en pantallas pequeñas */
+    }
+  }
+  
