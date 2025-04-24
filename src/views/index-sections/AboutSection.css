@@ -39,3 +39,42 @@
     line-height: 1.6;
   }
   
+  @media (max-width: 768px) {
+    .carousel-caption-custom h2 {
+      font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+  
+    .carousel-caption-custom p {
+      font-size: 1rem; /* Reduce el tamaño del texto */
+      max-width: 90%; /* Asegura que el texto no salga del contenedor */
+      word-wrap: break-word; /* Permite que las palabras largas se dividan */
+    }
+  }
+  
+  /* Ajustes para pantallas pequeñas (teléfonos móviles) */
+  @media (max-width: 480px) {
+    .about-section {
+      padding: 30px 10px; /* Reduce el padding general */
+    }
+  
+    .carousel-image {
+      max-height: 600px; /* Ajusta la altura de la imagen */
+    }
+  
+    .carousel-caption-custom {
+      bottom: 10%; /* Mueve el texto hacia abajo */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .carousel-caption-custom h2 {
+      font-size: 0.2rem; /* Reduce el tamaño del título */
+      line-height: 1.4; /* Asegura buena separación entre líneas */
+    }
+  
+    .carousel-caption-custom p {
+      font-size: 10px; /* Reduce el tamaño del texto */
+      max-width: 100%; /* Ocupa todo el ancho disponible */
+      padding: 0 10px; /* Agrega espacio lateral al texto */
+    }
+  }

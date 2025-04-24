@@ -15,19 +15,7 @@ function Images() {
               <div className="hero-images-container">
                 <img
                   alt="..."
-                  src={require("assets/img/hero-image-1.png")}
-                ></img>
-              </div>
-              <div className="hero-images-container-1">
-                <img
-                  alt="..."
-                  src={require("assets/img/hero-image-2.png")}
-                ></img>
-              </div>
-              <div className="hero-images-container-2">
-                <img
-                  alt="..."
-                  src={require("assets/img/hero-image-3.png")}
+                  src={require("assets/img/vcode-img-index.png")}
                 ></img>
               </div>
             </Col>

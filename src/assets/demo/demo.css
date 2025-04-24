@@ -335,7 +335,7 @@
 }
 
 #images h4 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #javascriptComponents {
@@ -496,7 +496,7 @@
 
 .section-images {
   padding-bottom: 0;
-  margin-bottom: -100px;
+  margin-bottom: -400px;
 }
 
 @media screen and (max-width: 991px) {

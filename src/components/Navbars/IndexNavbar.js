@@ -52,8 +52,24 @@ function IndexNavbar() {
               href="#"
               id="navbar-brand"
             >
-              V-Code
+              VCode
             </NavbarBrand>
+            <UncontrolledTooltip target="#navbar-brand">
+              Designed by VCode
+            </UncontrolledTooltip>
+            <button
+              className="navbar-toggler navbar-toggler"
+              onClick={() => {
+                document.documentElement.classList.toggle("nav-open");
+                setCollapseOpen(!collapseOpen);
+              }}
+              aria-expanded={collapseOpen}
+              type="button"
+            >
+              <span className="navbar-toggler-bar top-bar"></span>
+              <span className="navbar-toggler-bar middle-bar"></span>
+              <span className="navbar-toggler-bar bottom-bar"></span>
+            </button>
           </div>
           <Collapse
             className="justify-content-end"
@@ -62,22 +78,30 @@ function IndexNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink href="#technologies">
+                <NavLink
+                  href="#technologies"
+                >
                   <p>Tecnologías</p>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#about">
+                <NavLink
+                  href="#about"
+                >
                   <p>Acerca de</p>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#success-stories">
+                <NavLink
+                  href="#success-stories"
+                >
                   <p>Casos de éxito</p>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#contact">
+                <NavLink
+                  href="#contact"
+                >
                   <p>Contáctanos</p>
                 </NavLink>
               </NavItem>
